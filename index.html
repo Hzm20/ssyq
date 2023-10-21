@@ -4,22 +4,72 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="favicon.ico" />
-    <title>搜索引擎</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>百度搜索</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f5;
+      }
+
+      header {
+        background-color: #fff;
+        color: #333;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+      }
+
+      h1 {
+        font-size: 28px;
+        margin: 0;
+      }
+
+      form {
+        width: 80%;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+      }
+
+      input[type="text"] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: none;
+        border-radius: 4px;
+        font-size: 16px;
+      }
+
+      input[type="submit"] {
+        background-color: #4caf50;
+        color: #fff;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #3e8e41;
+      }
+    </style>
   </head>
 
   <body>
     <header>
-      <h1>搜索引擎</h1>
+      <h1>百度搜索</h1>
     </header>
+    <br><br><br><br> 
 
-    <form action="search.php" method="get">
-      <input type="text" placeholder="在百度中搜索" name="query" />
+    <form action="https://www.baidu.com/s" method="get">
+      <input type="text" placeholder="请输入内容" name="wd" />
       <input type="submit" value="搜索" />
     </form>
-
-    <div class="search-results"></div>
-
-    <script src="script.js"></script>
   </body>
 </html>
